@@ -1,11 +1,13 @@
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import FundNestAppBar from "./home";
+import HomePage from "./main";
 function App() {
   return (
-    <>
-    <h1>
-      crowd funding platform
-      </h1>
-      </>
+<router>
+  <FundNestAppBar />
+  <HomePage />
+</router>
   );
 }
 
